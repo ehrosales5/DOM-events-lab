@@ -4,7 +4,6 @@ var previousInput = 0;
 var operator = 0;
 
 
-        //Gets the input number
         function getNumber(num){
             console.log("GetNum: ",num)
 
@@ -22,16 +21,12 @@ var operator = 0;
         }
 
 
-        //Clears display.
         function clearDisplay(){
             currentInput = 0;
             previousInput = 0;
             refresh();
         }
 
-
-        //Grabs the operator saves it into a global var, then moves the value
-        //from the current to the previous operator, to free the current variable.
         
         function operation(value){
             if (currentInput == 0){
@@ -42,7 +37,7 @@ var operator = 0;
             operator = value;
         }
         
-        //Switch case that checks the operator and performs operation.
+       
         function Equals(){
             currentInput = parseFloat(currentInput);
             console.log("Operator:", operator)
@@ -65,7 +60,6 @@ var operator = 0;
             currentInput = 0;
         }
         
-        //Updates the display
         function refresh(){
           document.getElementById("displayNum").value = currentInput;
           console.log("Display refresh: ", currentInput)
@@ -125,8 +119,7 @@ var operator = 0;
       
 // //     }
 // //   });
-  
-
+//
 // // /*-------------------------------- Functions --------------------------------*/
 // // function add(){
 // //   return firstValue + secondValue
